@@ -5,10 +5,11 @@
 <h2>About</h2>
 
 <ul class="about">
-    <li>
+    //setting the data-url to go to the who ciew on the about controller
+    <li data-url="@url.Action("Who", "About")">
         Who?
     </li>
-    <li>
+    <li data-url=""@url.Action("Who", About")">
         What?
     </li>
     <li>
@@ -23,5 +24,6 @@
 </ul>
 
 <div>
+    <div id="tabContent">"
     @Html.Partial("who")
 </div>
